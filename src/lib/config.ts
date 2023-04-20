@@ -5,7 +5,7 @@ import { QueryClient } from "@tanstack/react-query"
 let MEDUSA_BACKEND_URL = "https://api.medusa.taisanvn.com"
 
 if (process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL) {
-  MEDUSA_BACKEND_URL = process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL || "https://api.medusa.taisanvn.com"
+  MEDUSA_BACKEND_URL = process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL
 }
 
 const queryClient = new QueryClient({
